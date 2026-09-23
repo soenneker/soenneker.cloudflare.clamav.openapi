@@ -50,7 +50,7 @@
           "Scanner"
         ],
         "summary": "Accepts a raw file upload and waits for its scan verdict.",
-        "description": "The request body is written to a temporary file before ownership transfers to the scan pipeline.\r\nDisconnecting after enqueueing does not cancel the queued scan. Scan failures propagate to the HTTP pipeline.",
+        "description": "The request body is written to a temporary file before ownership transfers to the scan pipeline.\nDisconnecting after enqueueing does not cancel the queued scan. Scan failures propagate to the HTTP pipeline.",
         "operationId": "Scan",
         "requestBody": {
           "description": "Raw file bytes, not multipart form data. The default upload limit is 100 MiB and can be configured by the operator.",
